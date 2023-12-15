@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 15px;
+            font-size: 17px;
+            padding: 8px;
+            
+        }
+        .main{
+             background-color: rgb(124, 233, 191);
+        }
+.container{
+    background-color: #f8f8f6;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,
+textarea{
+    width: 100%;
+    border-radius: 10px;
+    height: 30px;
+    
+}
+fieldset{
+    background-color: #fff;
+    border: 1px solid #0e0e0e;
+
+}
+
+    h1{
+        text-align: center;
+        
+    }
+    div{
+        padding: 10px;
+        margin: 10px;
+        
+        border-radius: 3px;
+    }
+    .clip-circle{
+        clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+
+
+    }
+    #box{
+        width: 150px;
+        height: 150px;
+        border: 10px;
+        
+        padding: 1cm;
+        float: left;
+       
+    }
+    input [type="submit"]
+    {
+        background-color: rgba(71, 210, 138, 0.906) 34, 34, 0.906;
+        color  :white;
+        padding  :12px 20px;
+        border:solid black;
+
+    }
+    .pay{
+        background-color: rgb(70, 215, 135);
+        font-size: large;
+        text-align: center;
+        width: 100%;
+        height: 30px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        
+    }
+    .pay:hover{
+       background-color: rgb(30, 230, 30); 
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <h1 class="main" >Payment Form</h1>
+        
+        <h2>Contact Information</h2>
+        <p>Name: <input type="text" name="name" placeholder="Full name" required class="name"></p>
+        <i class="fa fa-user icon"></i>
+        <p>
+            <fieldset>
+                <legend>Gender</legend>
+            Male <input type="radio" name="gender" id="gender" required> 
+            Female <input type="radio" name="gender" id="gender" required> 
+        </fieldset></p>
+<p> Address: <textarea name="address" id="address" placeholder="enter your address:" required cols="70" rows="10"></textarea> </Address></p>
+<p>Pincode: <input type="number" name="pincode" id="pincode" required></p>
+<p> Email: <input type="email" name="email" id="email" required></p>
+<h2>Payment Information</h2>
+<p>Card type: </p>
+    <select name="Card type" id="card type" name="card type" required>
+        <option value="">....Select a card type....</option>
+        <option value="Visa">Visa</option>
+        <option value="Rupay">Rupay</option>
+        <option value="Gpay">Gpay</option>
+    </select>
+    <p>Card number <input type="number" name="number" id="number" required>
+        <p>
+            Expiration Date: <input type="date" name="date" id="date" required>
+        </p>
+        <p>  Password *<input type="password" id="cvv" name="cvv" required>
+        </br>
+             <h1> <input class="pay" type="submit" value="Pay now"></h1>
+                       
+            </p>
+        </br>
+    </form>
+    
+</div>
+</body>
+</html>
