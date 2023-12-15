@@ -81,6 +81,31 @@ fieldset{
     .pay:hover{
        background-color: rgb(30, 230, 30); 
     }
+        .to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+         
+
+.to-top {
+    background-color: #c57651;
+    color: #11181f;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
     
     </style>
 </head>
@@ -120,6 +145,9 @@ fieldset{
             </p>
         </br>
     </form>
+        <a href="#" class="to-top active">
+        <i class="fa-solid fa-arrow-up">up</i>
+    </a>
     
 </div>
 </body>
