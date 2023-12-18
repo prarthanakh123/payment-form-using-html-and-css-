@@ -50,7 +50,7 @@ const disableBoxes = () => {
     }
 };
 
-const enaableBoxes = () => {
+const enableBoxes = () => {
     for(let box of boxes){
         box.disabled = false;
         box.innerText = "";
@@ -62,7 +62,7 @@ const enaableBoxes = () => {
 const showWinner = (winner) => {
     msg.innerText = `Congratulations, Winner is ${winner}`;
     msgContainer.classList.remove("hide");
-    box.disabled = true;
+    disableBoxes();
 }
         const checkWinner = () => {
             for(let pattern of winPatterns) {
@@ -73,7 +73,6 @@ const showWinner = (winner) => {
 
                      if(pos1Val != "" && pos2Val!= "" && pos3Val!= ""){
                         if(pos1Val === pos2Val && pos2Val === pos3Val){
-                            console.log("winner",pos1Val);
                             showWinner(pos1Val);
                             
                         }
