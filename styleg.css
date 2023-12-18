@@ -42,7 +42,9 @@ body{
     font-size: 25px;
     background-color: rgb(19, 19, 19);
     color: white;
-    border-radius: 50%;}
+    border-radius: 20%;
+    padding: 3px;
+}
 
     #new-btn
     {
@@ -50,7 +52,10 @@ body{
         font-size: 25px;
         background-color: rgb(19, 19, 19);
         color: white;
-        border-radius: 50%; 
+        border-radius: 20%; 
+        margin-top: 20px;
+        padding: 3px;
+        margin-bottom: 20px;
     }
 
     .msg{
@@ -59,7 +64,12 @@ body{
     }
 
     .msg-container{
-        height: 30vmin;
+        height: 100vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 4rem;
     }
 
     .hide{
